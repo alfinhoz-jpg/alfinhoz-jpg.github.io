@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-ubuntu">
+    <canvas
+      id="bgCanvas"
+      class="fixed top-0 left-0 w-full h-full -z-10"
+    ></canvas>
+    <!-- Hero -->
+    <section
+      id="home"
+      class="h-screen flex flex-col justify-center itens-center text-center"
+    >
+      <p class="text-center text-shadow-red text-xl">Olá, eu me chamo</p>
+      <h1 class="text-center text-6xl font-bold">
+        <span
+          class="hover:text-red-600 hover:text-7xl hover:border-b-2 hover:border-red-600"
+          >Arthur</span
+        >
+        Lemos.
+      </h1>
+      <p class="mt-4 text-2xl text-gray-200 typing-text">
+        Desenvolvedor | Criando experiências digitais
+      </p>
+      <div class="mt-6 space-x-4">
+        <a
+          href="https://github.com/alfinhoz-jpg"
+          target="_blank"
+          class="px-6 py-2 bg-red-600 rounded-lg hover:bg-red-800"
+          >Github <i class="fab fa-github fa"></i
+        ></a>
+        <a
+          href="#contato"
+          class="px-6 py-2 bg-red-600 rounded-lg hover:bg-red-800"
+          >Contato</a
+        >
+      </div>
+    </section>
+
+    <!-- Sobre Mim -->
+
+    <section id="sobre" class="fade-in mas-w-3xl mx-auto py-20 px-6">
+      <h2 class="fade-in text-3xl font-semibold mb-6 text-center">Sobre Mim</h2>
+      <p class="text-lg fade-in text-gray-200 leading-relaxed text-center">
+        Sou eu desenvolvedor em estudo, apaixonado por design e tecnologia.
+        Gosto de experiências que me desafiem a continuar aprendendo.
+        <br />Estou sempre buscando aprender novas ferramentas e melhorar minhas
+        habilidades para entregar projetos melhores cada dia que passar.
+      </p>
+    </section>
+
+    <!-- Projetos -->
+
+    <section id="projetos" class="fade-in py-20 px-6">
+      <h2 class="text-3xl font-semibold fade-in text-center mb-10">Projetos</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl fade-in mx-auto">
+        <!-- Projeto 1-->
+        <div
+          class="rounded-xl overflow-hidden shadow-xl ring-2 fade-in ring-red-600/20 shadow-red-600/40"
+        >
+          <div class="p-6 fade-in">
+            <h3 class="text-center fade-in text-xl font-semibold mb-2">
+              Projeto 1
+            </h3>
+            <p class="mb-4 text-gray-200 fade-in">Descrição do projeto.</p>
+            <a href="#" class="text-red-400 fade-in hover:underline"
+              >Ver projeto <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div
+          class="rounded-xl overflow-hidden shadow-xl fade-in ring-2 ring-red-600/20 shadow-red-600/40"
+        >
+          <div class="p-6">
+            <h3 class="text-center text-xl fade-in font-semibold mb-2">
+              Projeto 2
+            </h3>
+            <p class="mb-4 text-gray-200 fade-in">Descrição do projeto.</p>
+            <a href="#" class="text-red-400 fade-in hover:underline"
+              >Ver projeto <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+
+    <section
+      id="contato"
+      class="fade-in max-w-3xl mx-auto py-20 px-6 text-center"
+    >
+      <h2 class="text-3xl fade-in font-semibold mb-6">Contato</h2>
+      <p class="mb-6 fade-in">Tem algum projeto em mente? Entre em contato</p>
+      <a
+        href="mailto:arthur.fs.lemos@gmail.com"
+        target="_blank"
+        class="fade-in px-6 py-3 bg-red-600 rounded-lg hover:bg-red-800"
+        >Enviar Email <i class="fa-slab fa-regular fa-envelope"></i
+      ></a>
+    </section>
+
+    <footer class="py-6 text-center text-gray-500 text-sm">
+      &copy; 2025 Arthur. Todos os direitos Reservados
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
