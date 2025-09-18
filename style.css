@@ -40,3 +40,7 @@ html {
 .text-shadow-red {
   text-shadow: 0px 2px 6px rgba(255, 0, 0, 1);
 }
+
+ {
+  top: 25vh;
+}

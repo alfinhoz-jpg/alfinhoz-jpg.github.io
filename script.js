@@ -28,6 +28,14 @@ canvas.height = window.innerHeight;
 
 let particles = [];
 
+const mouse = { x: null, y: null };
+const attractionRadius = 150;
+
+window.addEventListener("mousemove", (e) => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+});
+
 class Particle {
   constructor(x, y, size, speedX, speedY) {
     this.x = x;
@@ -107,7 +115,7 @@ window.addEventListener("resize", () => {
 // A
 
 const typingText = document.querySelector(".typing-text");
-const phrases = ["Desenvolvedor Front-end", "Criando experiências digitais"];
+const phrases = ["Desenvolvedor Front-end.", "Criando experiências digitais."];
 let phraseIndex = 0;
 let letterIndex = 0;
 let isDeleting = false;
@@ -124,7 +132,7 @@ function type() {
       setTimeout(type, 1500); // pausa no fim da frase antes de apagar
       return;
     }
-    setTimeout(type, 100); // velocidade de digitação
+    setTimeout(type, 60); // velocidade de digitação
   } else {
     typingText.textContent = current.substring(0, letterIndex - 1);
     letterIndex--;
@@ -132,10 +140,10 @@ function type() {
     if (letterIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      setTimeout(type, 500); // pausa antes de começar a próxima frase
+      setTimeout(type, 500);
       return;
     }
-    setTimeout(type, 60); // velocidade de apagar (um pouco mais rápido que digitar)
+    setTimeout(type, 50);
   }
 }
 

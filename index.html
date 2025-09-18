@@ -23,12 +23,11 @@
       class="h-screen flex flex-col justify-center itens-center text-center"
     >
       <p class="text-center text-shadow-red text-xl">Olá, eu me chamo</p>
-      <h1 class="text-center text-6xl font-bold">
+      <h1 class="text-center text-7xl font-bold">
         <span
-          class="hover:text-red-600 hover:text-7xl hover:border-b-2 hover:border-red-600"
-          >Arthur</span
+          class="hover:transition-all hover:duration-200 hover:ease-in-out hover:text-red-600 hover:text-8xl hover:border-b-2 hover:border-red-600"
+          >Arthur.</span
         >
-        Lemos.
       </h1>
       <p class="mt-4 text-2xl text-gray-200 typing-text">
         Desenvolvedor | Criando experiências digitais
@@ -50,8 +49,20 @@
 
     <!-- Sobre Mim -->
 
-    <section id="sobre" class="fade-in mas-w-3xl mx-auto py-20 px-6">
-      <h2 class="fade-in text-3xl font-semibold mb-6 text-center">Sobre Mim</h2>
+    <section
+      id="sobre"
+      class="relative fade-in max-w-3xl mx-auto minh-h-screen py-20 px-6"
+    >
+      <span
+        class="absolute left-1/2 -translate-x-1/2 text-6xl select-none pointer-events-none uppercase"
+        style="top: 7vh; opacity: 0.03"
+        >Sobre Mim</span
+      >
+      <h2
+        class="fade-in text-3xl font-semibold mb-6 relative z-10 text-center uppercase"
+      >
+        Sobre Mim
+      </h2>
       <p class="text-lg fade-in text-gray-200 leading-relaxed text-center">
         Sou eu desenvolvedor em estudo, apaixonado por design e tecnologia.
         Gosto de experiências que me desafiem a continuar aprendendo.
@@ -62,8 +73,15 @@
 
     <!-- Projetos -->
 
-    <section id="projetos" class="fade-in py-20 px-6">
-      <h2 class="text-3xl font-semibold fade-in text-center mb-10">Projetos</h2>
+    <section id="projetos" class="fade-in py-20 px-6 min-h-screen relative">
+      <span
+        class="absolute left-1/2 -translate-x-1/2 text-6xl select-none pointer-events-none uppercase"
+        style="top: 7vh; opacity: 0.03"
+        >Projetos</span
+      >
+      <h2 class="text-3xl font-semibold fade-in text-center mb-10 uppercase">
+        Projetos
+      </h2>
       <div class="grid md:grid-cols-2 gap-8 max-w-5xl fade-in mx-auto">
         <!-- Projeto 1-->
         <div
@@ -101,9 +119,14 @@
 
     <section
       id="contato"
-      class="fade-in max-w-3xl mx-auto py-20 px-6 text-center"
+      class="fade-in max-w-3xl mx-auto py-20 px-6 text-center min-h-screen relative"
     >
-      <h2 class="text-3xl fade-in font-semibold mb-6">Contato</h2>
+      <span
+        class="absolute left-1/2 -translate-x-1/2 text-6xl select-none pointer-events-none uppercase"
+        style="top: 7vh; opacity: 0.03"
+        >Contato</span
+      >
+      <h2 class="text-3xl fade-in font-semibold mb-6 uppercase">Contato</h2>
       <p class="mb-6 fade-in">Tem algum projeto em mente? Entre em contato</p>
       <a
         href="mailto:arthur.fs.lemos@gmail.com"
